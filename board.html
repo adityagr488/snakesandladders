@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="#">
+        <title>Snakes and Ladders</title>
+        <link rel="stylesheet" href="/snakesandladders/style.css">
+        <script src="/snakesandladders/run.js"></script>
+    </head>
+    <body onload="start()">
+        <div id="overlay">Congratulations!</div>
+        <div class="board">
+            <div class="initial tile-col" id="0"></div>
+            <table>
+                <tr class="tile-row">
+                    <td class="tile-col" id="100"></td>
+                    <td class="tile-col" id="99"></td>
+                    <td class="tile-col" id="98"></td>
+                    <td class="tile-col" id="97"></td>
+                    <td class="tile-col" id="96"></td>
+                    <td class="tile-col" id="95"></td>
+                    <td class="tile-col" id="94"></td>
+                    <td class="tile-col" id="93"></td>
+                    <td class="tile-col" id="92"></td>
+                    <td class="tile-col" id="91"></td>
+                </tr>
+                <tr class="tile-row">
+                    <td class="tile-col" id="81"></td>
+                    <td class="tile-col" id="82"></td>
+                    <td class="tile-col" id="83"></td>
+                    <td class="tile-col" id="84"></td>
+                    <td class="tile-col" id="85"></td>
+                    <td class="tile-col" id="86"></td>
+                    <td class="tile-col" id="87"></td>
+                    <td class="tile-col" id="88"></td>
+                    <td class="tile-col" id="89"></td>
+                    <td class="tile-col" id="90"></td>
+                </tr>
+                <tr class="tile-row">
+                    <td class="tile-col" id="80"></td>
+                    <td class="tile-col" id="79"></td>
+                    <td class="tile-col" id="78"></td>
+                    <td class="tile-col" id="77"></td>
+                    <td class="tile-col" id="76"></td>
+                    <td class="tile-col" id="75"></td>
+                    <td class="tile-col" id="74"></td>
+                    <td class="tile-col" id="73"></td>
+                    <td class="tile-col" id="72"></td>
+                    <td class="tile-col" id="71"></td>
+                </tr>
+                <tr class="tile-row">
+                    <td class="tile-col" id="61"></td>
+                    <td class="tile-col" id="62"></td>
+                    <td class="tile-col" id="63"></td>
+                    <td class="tile-col" id="64"></td>
+                    <td class="tile-col" id="65"></td>
+                    <td class="tile-col" id="66"></td>
+                    <td class="tile-col" id="67"></td>
+                    <td class="tile-col" id="68"></td>
+                    <td class="tile-col" id="69"></td>
+                    <td class="tile-col" id="70"></td>
+                </tr>
+                <tr class="tile-row">
+                    <td class="tile-col" id="60"></td>
+                    <td class="tile-col" id="59"></td>
+                    <td class="tile-col" id="58"></td>
+                    <td class="tile-col" id="57"></td>
+                    <td class="tile-col" id="56"></td>
+                    <td class="tile-col" id="55"></td>
+                    <td class="tile-col" id="54"></td>
+                    <td class="tile-col" id="53"></td>
+                    <td class="tile-col" id="52"></td>
+                    <td class="tile-col" id="51"></td>
+                </tr>
+                <tr class="tile-row">
+                    <td class="tile-col" id="41"></td>
+                    <td class="tile-col" id="42"></td>
+                    <td class="tile-col" id="43"></td>
+                    <td class="tile-col" id="44"></td>
+                    <td class="tile-col" id="45"></td>
+                    <td class="tile-col" id="46"></td>
+                    <td class="tile-col" id="47"></td>
+                    <td class="tile-col" id="48"></td>
+                    <td class="tile-col" id="49"></td>
+                    <td class="tile-col" id="50"></td>
+                </tr>
+                <tr class="tile-row">
+                    <td class="tile-col" id="40"></td>
+                    <td class="tile-col" id="39"></td>
+                    <td class="tile-col" id="38"></td>
+                    <td class="tile-col" id="37"></td>
+                    <td class="tile-col" id="36"></td>
+                    <td class="tile-col" id="35"></td>
+                    <td class="tile-col" id="34"></td>
+                    <td class="tile-col" id="33"></td>
+                    <td class="tile-col" id="32"></td>
+                    <td class="tile-col" id="31"></td>
+                </tr>
+                <tr class="tile-row">
+                    <td class="tile-col" id="21"></td>
+                    <td class="tile-col" id="22"></td>
+                    <td class="tile-col" id="23"></td>
+                    <td class="tile-col" id="24"></td>
+                    <td class="tile-col" id="25"></td>
+                    <td class="tile-col" id="26"></td>
+                    <td class="tile-col" id="27"></td>
+                    <td class="tile-col" id="28"></td>
+                    <td class="tile-col" id="29"></td>
+                    <td class="tile-col" id="30"></td>
+                </tr>
+                <tr class="tile-row">
+                    <td class="tile-col" id="20"></td>
+                    <td class="tile-col" id="19"></td>
+                    <td class="tile-col" id="18"></td>
+                    <td class="tile-col" id="17"></td>
+                    <td class="tile-col" id="16"></td>
+                    <td class="tile-col" id="15"></td>
+                    <td class="tile-col" id="14"></td>
+                    <td class="tile-col" id="13"></td>
+                    <td class="tile-col" id="12"></td>
+                    <td class="tile-col" id="11"></td>
+                </tr>
+                <tr class="tile-row">
+                    <td class="tile-col" id="1"></td>
+                    <td class="tile-col" id="2"></td>
+                    <td class="tile-col" id="3"></td>
+                    <td class="tile-col" id="4"></td>
+                    <td class="tile-col" id="5"></td>
+                    <td class="tile-col" id="6"></td>
+                    <td class="tile-col" id="7"></td>
+                    <td class="tile-col" id="8"></td>
+                    <td class="tile-col" id="9"></td>
+                    <td class="tile-col" id="10"></td>
+                </tr>
+            </table>
+            <audio src="/snakesandladders/dice.mp3" id="audio"></audio>
+            <div class="playerturn">
+                <div id="turn-head">Turn</div>
+                <div id="playernum"><img src="/snakesandladders/imgs/players_red.png" id="player"></div>
+            </div>
+            <div id="dice"><img src="/snakesandladders/imgs/3.jpg" id="dicenum"></div>
+            <div id="btndiv"><button id="btn" onclick="roll()">GO</button></div>
+        </div>
+    </body>
+</html>

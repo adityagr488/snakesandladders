@@ -1,0 +1,161 @@
+/*index.html starts here*/
+
+.start{
+    width: 600px;
+    margin: auto;
+    height: 600px;
+}
+#start-game{
+    padding: 15px 25px;
+    width: 50%;
+    margin: 30px 150px 30px;
+    font-size: 24px;
+    font-style: italic;
+    text-align: center;
+    cursor: pointer;
+    outline:none;
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 15px;
+}
+#start-game:active{
+    background-color: rgb(150, 0, 0);
+    transform: translateY(4px);
+}
+#title-tile{
+    width: 100%;
+}
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+label{
+    display: block;
+    margin: 10px 188px 16px;
+    padding: 2%;
+    background-color: #0ba70bcc;
+    border-radius: 15px;
+    width: 200px;
+    color: white;
+    font-size: 20px;
+    font-style: italic;
+}
+input[type="radio"]{
+    margin: 5px 10px 5px 30px;
+}
+
+/*index.html ends here*/
+
+/*---------------------------------------------------------*/
+
+/*board.html start here*/
+
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
+.initial{
+    position: absolute;
+    top: 90%;
+    left: -12%;
+}
+.board{
+    background: url(/snakesandladders/imgs/colorfull-snake-and-ladder-game.jpg) no-repeat;
+    width: 585px;
+    margin: auto;
+    position: relative;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.tile-row{
+    width: 580px;
+    height: 58px;
+    display: flex;
+    flex-direction: row;
+}
+.tile-col{
+    width: 54px;
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 2px;
+    padding-left: 3px;
+    justify-content: space-evenly;
+}
+.tile-col img{
+    height: 45px;
+}
+.playerturn{
+    width: 145px;
+    border: 2px solid black;
+    border-radius: 10px;
+    position: absolute;
+    top: 15%;
+    left: 105%;
+}
+.playerturn img{
+    width: 15px;
+}
+#turn-head{
+    background-color: #ffff00bf;
+    border-radius: 8px;
+    padding: 5px;
+    text-align: center;
+    font-size: 24px;
+    color: red;
+    top: 55%;
+    left: 76%;
+}
+#playernum{
+    padding: 5px;
+    text-align: center;
+    font-size: 24px;
+    color: red;
+    top: 65%;
+    left: 76%;
+}
+#dice{
+    left: 105%;
+    top: 50%;
+    position: absolute;
+}
+#dicenum{
+    width: 70px;
+    border-radius: 15px;
+    height: 70px;
+}
+#btndiv{
+    left: 120%;
+    top: 50%;
+    position: absolute;
+}
+#btn{
+    font-size: 20px;
+    padding: 20px;
+    height: 70px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(0, 182, 0);
+    color: white;
+    cursor:pointer;
+}
+#btn:active{
+    background-color: rgb(0, 90, 0);
+}
+
+/*board.html ends here*/
